@@ -2,9 +2,6 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime, time, timedelta
-git add requirements.txt.txt
-git commit -m "Lisätty requirements.txt.txt kirjastoille"
-git push origin main
 # --- Sovelluksen otsikko ---
 st.set_page_config(page_title="Oven läpimenoanalyysi", page_icon="🏭")
 st.title("Oven läpimenoanalyysi")
@@ -107,5 +104,6 @@ if tiedosto:
         if st.button("Tallenna Exceliin"):
             df_valittu.to_excel(tiedostonimi, index=False)
             st.success(f"Tulokset tallennettu tiedostoon: {tiedostonimi}")
+
 
 
